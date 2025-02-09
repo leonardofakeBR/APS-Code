@@ -4,10 +4,11 @@ using namespace std;
 
 class Produto;
 
-class IProdutoDao {
+class ProdutoDao {
     private:
         Produto *produto;
+
     public:
-    virtual int getIdCliente(int id_pedido) = 0;
-    virtual void listar() = 0;
+        virtual int getIdCliente(int id_pedido);
+        virtual void listar();
 };

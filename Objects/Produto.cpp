@@ -1,34 +1,34 @@
-#include "IProduto.hpp"
+#include "Produto.hpp"
 
-void IProduto::setIdProduto(int id_produto){
+void Produto::setIdProduto(int id_produto){
     this->id_produto = id_produto;
 }
-int IProduto::getIdProduto(){
+int Produto::getIdProduto(){
     return this->id_produto;
 }
 
-void IProduto::setNome(string nome){
+void Produto::setNome(string nome){
     this->nome = nome;
 }
-string IProduto::getNome(){
+string Produto::getNome(){
     return this->nome;
 }
 
-void IProduto::setPreco(float preco){
+void Produto::setPreco(float preco){
     this->preco = preco;
 }
-float IProduto::getPreco(){
+float Produto::getPreco(){
     return this->preco;
 }
 
-void IProduto::setCategoria(string categoria){
+void Produto::setCategoria(string categoria){
     this->categoria = categoria;
 }
-string IProduto::getCategoria(){
+string Produto::getCategoria(){
     return this->categoria;
 }
 
-void IProduto::imprime(){
+void Produto::imprime(){
     cout << "ID: " << this->id_produto << endl;
     cout << "Nome: " << this->nome << endl;
     cout << "Preço: " << this->preco << endl;
