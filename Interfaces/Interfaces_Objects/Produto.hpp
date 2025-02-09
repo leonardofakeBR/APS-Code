@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-class IProduto {
+class Produto {
     private:
         int id_produto;
         string nome;
@@ -10,7 +10,7 @@ class IProduto {
         string categoria;
         
     public:
-        IProduto(int id_produto, string nome, float preco, string categoria);
+        Produto(int id_produto, string nome, float preco, string categoria);
 
         int getIdProduto();
         void setIdProduto(int id_produto);
