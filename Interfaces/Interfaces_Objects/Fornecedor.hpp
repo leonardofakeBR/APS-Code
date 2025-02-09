@@ -2,9 +2,9 @@
 #include <string>
 using namespace std;
 
-class IFornecedor {
+class Fornecedor {
     private:
-        string CNPJ;
+        int CNPJ;
         string nome;
         string telefone;
         string email;
@@ -13,10 +13,10 @@ class IFornecedor {
         string condicoes_de_Entrega;
         
     public:
-        IFornecedor(string CNPJ, string nome, string telefone, string email, string endereco, string contado_Principal, string condicoes_de_Entrega);
+        Fornecedor(int CNPJ, string nome, string telefone, string email, string endereco, string contado_Principal, string condicoes_de_Entrega);
 
-        string getCNPJ();
-        void setCNPJ(string CNPJ);
+        int getCNPJ();
+        void setCNPJ(int CNPJ);
 
         string getNome();
         void setNome(string nome);
