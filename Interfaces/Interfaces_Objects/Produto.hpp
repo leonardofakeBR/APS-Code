@@ -12,16 +12,16 @@ class Produto {
     public:
         Produto(int id_produto, string nome, float preco, string categoria);
 
-        int getIdProduto();
+        int pegueIdProduto();
         void setIdProduto(int id_produto);
 
-        string getNome();
+        string pegueNome();
         void setNome(string nome);
 
-        float getPreco();
+        float peguePreco();
         void setPreco(float preco);
 
-        string getCategoria();
+        string pegueCategoria();
         void setCategoria(string categoria);
 
         void imprime();

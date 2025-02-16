@@ -9,10 +9,10 @@ class Estoque {
     public:
         Estoque(int capacidade, string endereco);
 
-        int getCapacidade();
+        int pegueCapacidade();
         void setCapacidade(int capacidade);
 
-        string getEndereco();
+        string pegueEndereco();
         void setEndereco(string endereco);
 
         void imprime();     

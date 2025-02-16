@@ -9,6 +9,6 @@ class ProdutoDao {
         Produto *produto;
 
     public:
-        virtual int getCPFCliente(int id_pedido);
+        virtual int pegueCPFCliente(int id_pedido);
         virtual void listar();
 };

@@ -13,22 +13,22 @@ class Cupom {
     public:
         Cupom(string codigo, string descricao, string desconto, string data_de_Inicio, string data_de_Fim, float valor_Minimo);
 
-        string getCodigo();
+        string pegueCodigo();
         void setCodigo(string codigo);
 
-        string getDescricao();
+        string pegueDescricao();
         void setDescricao(string descricao);
 
-        string getDesconto();
+        string pegueDesconto();
         void setDesconto(string desconto);
 
-        string getData_de_Inicio();
+        string pegueData_de_Inicio();
         void setData_de_Inicio(string data_de_Inicio);
 
-        string getData_de_Fim();
+        string pegueData_de_Fim();
         void setData_de_Fim(string data_de_Fim);
 
-        float getValor_Minimo();
+        float pegueValor_Minimo();
         void setValor_Minimo(float valor_Minimo);
 
         void imprime();

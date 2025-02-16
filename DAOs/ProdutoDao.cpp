@@ -4,6 +4,6 @@
 
 using namespace std;
 
-int ProdutoDao::getCPFCliente(int id_Pedido){
+int ProdutoDao::pegueCPFCliente(int id_Pedido){
     return CPF;
 }

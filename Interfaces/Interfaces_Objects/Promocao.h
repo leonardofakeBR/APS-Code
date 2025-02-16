@@ -8,13 +8,13 @@ private:
 	double desconto;
 	
 public:
-	int getId_Promocao();
+	int pegueId_Promocao();
 	void setId_Promocao(int idPromocao);
 	
-	std::string getNome();
+	std::string pegueNome();
 	void setNome(std::string novoNome);
 	
-	double getDesconto();
+	double pegueDesconto();
 	void setDesconto(double desc);
 	
 };

@@ -10,6 +10,8 @@ class PedidoDao {
         Pedido *pedido;
 
     public:
-        virtual int getCPFCliente(int id_pedido);
-        virtual NotaFiscal* getNotaFiscal(int id_pedido);
+        virtual int pegueCPFCliente(int id_pedido);
+        virtual NotaFiscal* pegueNotaFiscal(int id_pedido);
+        virtual void confirmarPagamento(int id_pedido);
+        virtual string exibirResultado();
 };

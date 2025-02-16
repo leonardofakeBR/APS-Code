@@ -17,9 +17,9 @@ class DaoManager{
         ProdutoDao *produtoDao;
         
     public:        
-        CupomDao* getCupomDao();
-        EstoqueDao* getEstoqueDao();
-        FornecedorDao* getFornecedorDao();
-        PedidoDao* getPedidoDao();
-        ProdutoDao* getProdutoDao();
+        CupomDao* pegueCupomDao();
+        EstoqueDao* pegueEstoqueDao();
+        FornecedorDao* pegueFornecedorDao();
+        PedidoDao* peguePedidoDao();
+        ProdutoDao* pegueProdutoDao();
 };

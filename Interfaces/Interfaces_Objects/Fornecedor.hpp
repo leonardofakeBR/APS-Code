@@ -15,25 +15,25 @@ class Fornecedor {
     public:
         Fornecedor(int CNPJ, string nome, string telefone, string email, string endereco, string contado_Principal, string condicoes_de_Entrega);
 
-        int getCNPJ();
+        int pegueCNPJ();
         void setCNPJ(int CNPJ);
 
-        string getNome();
+        string pegueNome();
         void setNome(string nome);
 
-        string getTelefone();
+        string pegueTelefone();
         void setTelefone(string telefone);
 
-        string getEmail();
+        string pegueEmail();
         void setEmail(string email);
 
-        string getEndereco();
+        string pegueEndereco();
         void setEndereco(string endereco);
 
-        string getContado_Principal();
+        string pegueContado_Principal();
         void setContado_Principal(string contado_Principal);
 
-        string getCondicoes_de_Entrega();
+        string pegueCondicoes_de_Entrega();
         void setCondicoes_de_Entrega(string condicoes_de_Entrega);
 
         void imprime();

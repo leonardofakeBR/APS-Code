@@ -3,28 +3,28 @@
 void Produto::setIdProduto(int id_produto){
     this->id_produto = id_produto;
 }
-int Produto::getIdProduto(){
+int Produto::pegueIdProduto(){
     return this->id_produto;
 }
 
 void Produto::setNome(string nome){
     this->nome = nome;
 }
-string Produto::getNome(){
+string Produto::pegueNome(){
     return this->nome;
 }
 
 void Produto::setPreco(float preco){
     this->preco = preco;
 }
-float Produto::getPreco(){
+float Produto::peguePreco(){
     return this->preco;
 }
 
 void Produto::setCategoria(string categoria){
     this->categoria = categoria;
 }
-string Produto::getCategoria(){
+string Produto::pegueCategoria(){
     return this->categoria;
 }
 

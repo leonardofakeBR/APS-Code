@@ -1,6 +1,6 @@
 #include "Cliente.h"
 
-	std::string getCPF() {
+	std::string pegueCPF() {
 		return CPF;
 		
 	}
@@ -10,7 +10,7 @@
 		
 	}
 	
-	std::string getNome() {
+	std::string pegueNome() {
 		return nome;
 		
 	}
@@ -20,7 +20,7 @@
 		
 	}
 	
-	std::string getEmail() {
+	std::string pegueEmail() {
 		return email;
 		
 	}
@@ -30,7 +30,7 @@
 		
 	}
 	
-	std::string getEndereco() {
+	std::string pegueEndereco() {
 		return endereco;
 		
 	}

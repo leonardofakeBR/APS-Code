@@ -1,6 +1,6 @@
 #include "Promocao.h"
 
-int Promocao::getId_Promocao() {
+int Promocao::pegueId_Promocao() {
 	return id_Promocao;
 	
 }
@@ -10,7 +10,7 @@ void Promocao::setId_Promocao(int idPromocao) {
 	
 }
 
-double Promocao::getDesconto() {
+double Promocao::pegueDesconto() {
 	return desconto;
 	
 }
@@ -20,7 +20,7 @@ void Promocao::setDesconto(double desc) {
 	
 }
 
-std::string Promocao::getNome() {
+std::string Promocao::pegueNome() {
 	return nome;
 	
 }

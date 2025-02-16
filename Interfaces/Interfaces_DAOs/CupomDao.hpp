@@ -10,6 +10,7 @@ class CupomDao {
 
     public:
         virtual Cupom* criar();
+        virtual Cupom* recuperar(string codigo);
         virtual bool update(Cupom cupom);
 
 };

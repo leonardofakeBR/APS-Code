@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/EDSON/Documents/VSCode/APS/Objects",
-      "program": "c:/Users/EDSON/Documents/VSCode/APS/Objects/build/Debug/outDebug",
+      "cwd": "c:/Users/EDSON/Documents/VSCode",
+      "program": "c:/Users/EDSON/Documents/VSCode/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

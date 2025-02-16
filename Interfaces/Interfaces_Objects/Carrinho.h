@@ -7,10 +7,10 @@ private:
 	double valor_Parcial_Da_Compra;
 	
 public:
-	std::string getTotal_De_Itens();
+	std::string pegueTotal_De_Itens();
 	void setTotal_De_Itens(std::string itens);
 	
-	double getValor_Parcial_Da_Compra();
+	double pegueValor_Parcial_Da_Compra();
 	void setValor_Parcial_Da_Compra(double valor);
 	
 };
