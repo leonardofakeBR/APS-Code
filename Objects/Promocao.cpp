@@ -1,31 +1,31 @@
-#include "Promocao.h"
+#include "Promocao.hpp"
 
-int Promocao::pegueId_Promocao() {
-	return id_Promocao;
+int Promocao::getId_Promocao() {
+	return Id_Promocao;
 	
 }
 
 void Promocao::setId_Promocao(int idPromocao) {
-	id_Promocao = idPromocao;
+	Id_Promocao = idPromocao;
 	
 }
 
-double Promocao::pegueDesconto() {
-	return desconto;
+double Promocao::getDesconto() {
+	return Desconto;
 	
 }
 
 void Promocao::setDesconto(double desc) {
-	desconto = desc;
+	Desconto = desc;
 	
 }
 
-std::string Promocao::pegueNome() {
-	return nome;
+std::string Promocao::getNome() {
+	return Nome;
 	
 }
 
 void Promocao::setNome(std::string novoNome) {
-	nome = novoNome;
+	Nome = novoNome;
 	
 }

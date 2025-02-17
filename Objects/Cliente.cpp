@@ -1,41 +1,41 @@
-#include "Cliente.h"
+#include "Cliente.hpp"
 
-	std::string pegueCPF() {
-		return CPF;
+	std::string getCPF_Cliente() {
+		return CPF_Cliente;
 		
 	}
 	
-	void setCPF(std::string cpfCliente) {
-		CPF = cpfCliente;
+	void setCPF_Cliente(int cpfCliente) {
+		CPF_Cliente = cpfCliente;
 		
 	}
 	
-	std::string pegueNome() {
-		return nome;
+	std::string getNome() {
+		return Nome;
 		
 	}
 	
 	void setNome(std::string nomeCliente) {
-		nome = nomeCliente;
+		Nome = nomeCliente;
 		
 	}
 	
-	std::string pegueEmail() {
-		return email;
+	std::string getEmail() {
+		return Email;
 		
 	}
 	
 	void setEmail(std::string emailCliente) {
-		email = emailCliente;
+		Email = emailCliente;
 		
 	}
 	
-	std::string pegueEndereco() {
-		return endereco;
+	std::string getEndereco() {
+		return Endereco;
 		
 	}
 	
 	void setEndereco(std::string enderecoCliente) {
-		endereco = enderecoCliente;
+		Endereco = enderecoCliente;
 		
 	}
