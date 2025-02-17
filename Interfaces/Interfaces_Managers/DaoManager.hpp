@@ -4,7 +4,6 @@ using namespace std;
 
 #include <CupomDao.hpp>
 #include <EstoqueDao.hpp>
-#include <FornecedorDao.hpp>
 #include <PedidoDao.hpp>
 #include <ProdutoDao.hpp>
 
@@ -12,14 +11,12 @@ class DaoManager{
     private:
         CupomDao *cupomDao;
         EstoqueDao *estoqueDao;
-        FornecedorDao *fornecedorDao;
         PedidoDao *pedidoDao;
         ProdutoDao *produtoDao;
         
     public:        
         CupomDao* pegueCupomDao();
         EstoqueDao* pegueEstoqueDao();
-        FornecedorDao* pegueFornecedorDao();
         PedidoDao* peguePedidoDao();
         ProdutoDao* pegueProdutoDao();
 };

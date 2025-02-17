@@ -13,16 +13,16 @@ class Produto {
         Produto(int id_produto, string nome, float preco, string categoria);
 
         int pegueIdProduto();
-        void setIdProduto(int id_produto);
+        void definaIdProduto(int id_produto);
 
         string pegueNome();
-        void setNome(string nome);
+        void definaNome(string nome);
 
         float peguePreco();
-        void setPreco(float preco);
+        void definaPreco(float preco);
 
         string pegueCategoria();
-        void setCategoria(string categoria);
+        void definaCategoria(string categoria);
 
         void imprime();
 };

@@ -14,22 +14,22 @@ class Cupom {
         Cupom(string codigo, string descricao, string desconto, string data_de_Inicio, string data_de_Fim, float valor_Minimo);
 
         string pegueCodigo();
-        void setCodigo(string codigo);
+        void definaCodigo(string codigo);
 
         string pegueDescricao();
-        void setDescricao(string descricao);
+        void definaDescricao(string descricao);
 
         string pegueDesconto();
-        void setDesconto(string desconto);
+        void definaDesconto(string desconto);
 
         string pegueData_de_Inicio();
-        void setData_de_Inicio(string data_de_Inicio);
+        void definaData_de_Inicio(string data_de_Inicio);
 
         string pegueData_de_Fim();
-        void setData_de_Fim(string data_de_Fim);
+        void definaData_de_Fim(string data_de_Fim);
 
         float pegueValor_Minimo();
-        void setValor_Minimo(float valor_Minimo);
+        void definaValor_Minimo(float valor_Minimo);
 
         void imprime();
 };

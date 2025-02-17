@@ -1,27 +1,27 @@
 #include "Produto.hpp"
 
-void Produto::setIdProduto(int id_produto){
+void Produto::definaIdProduto(int id_produto){
     this->id_produto = id_produto;
 }
 int Produto::pegueIdProduto(){
     return this->id_produto;
 }
 
-void Produto::setNome(string nome){
+void Produto::definaNome(string nome){
     this->nome = nome;
 }
 string Produto::pegueNome(){
     return this->nome;
 }
 
-void Produto::setPreco(float preco){
+void Produto::definaPreco(float preco){
     this->preco = preco;
 }
 float Produto::peguePreco(){
     return this->preco;
 }
 
-void Produto::setCategoria(string categoria){
+void Produto::definaCategoria(string categoria){
     this->categoria = categoria;
 }
 string Produto::pegueCategoria(){

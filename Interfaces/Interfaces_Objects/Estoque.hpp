@@ -10,10 +10,10 @@ class Estoque {
         Estoque(int capacidade, string endereco);
 
         int pegueCapacidade();
-        void setCapacidade(int capacidade);
+        void definaCapacidade(int capacidade);
 
         string pegueEndereco();
-        void setEndereco(string endereco);
+        void definaEndereco(string endereco);
 
         void imprime();     
 
