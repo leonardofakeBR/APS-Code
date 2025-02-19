@@ -10,5 +10,6 @@ class PedidoManager {
 
     public:
     virtual void AtualizarStatus(int id_pedido);
+    virtual NotaFiscal* solicitarNotaFiscal(int id_pedido);
 
 };

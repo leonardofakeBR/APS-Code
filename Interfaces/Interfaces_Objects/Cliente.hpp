@@ -9,20 +9,20 @@ private:
 	std::string Endereco;
 	
 public:
-	int getCPF_Cliente();
+	int pegueCPF_Cliente();
 	
-	void setCPF_Cliente(int);
+	void definaCPF_Cliente(int);
 	
-	std::string getNome();
+	std::string pegueNome();
 	
-	void setNome(std::string);
+	void definaNome(std::string);
 	
-	std::string getEmail();
+	std::string pegueEmail();
 	
-	void setEmail(std::string);
+	void definaEmail(std::string);
 	
-	std::string getEndereco();
+	std::string pegueEndereco();
 	
-	void setEndereco(std::string);
+	void definaEndereco(std::string);
 	
 };

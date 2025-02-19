@@ -8,14 +8,14 @@ private:
 	double Desconto;
 	
 public:
-	int getId_Promocao();
-	void setId_Promocao(int);
+	int pegueId_Promocao();
+	void definaId_Promocao(int);
 	
-	std::string getNome();
-	void setNome(std::string);
+	std::string pegueNome();
+	void definaNome(std::string);
 	
-	double getDesconto();
-	void setDesconto(double);
+	double pegueDesconto();
+	void definaDesconto(double);
 	
 };
 

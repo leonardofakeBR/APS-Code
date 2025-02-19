@@ -7,3 +7,8 @@ using namespace std;
 void PedidoManager::AtualizarStatus(int id_pedido){
     
 }
+
+NotaFiscal* PedidoManager::solicitarNotaFiscal(int id_pedido){
+    PedidoDao* dao = daoManager.peguePedidoDao();
+    return dao->pegueNotaFiscal(id_pedido);
+}
