@@ -1,5 +1,7 @@
 #include <string>
 
+class Carrinho;
+
 class Cliente {
 
 private:
@@ -7,8 +9,11 @@ private:
 	std::string Nome;
 	std::string Email;
 	std::string Endereco;
+	Carrinho* carrinho;
 	
 public:
+	Cliente(int CPF_Cliente, std::string Nome, std::string Email, std::string Endereco, Carrinho* carrinho);
+
 	int pegueCPF_Cliente();
 	
 	void definaCPF_Cliente(int);
@@ -24,5 +29,9 @@ public:
 	std::string pegueEndereco();
 	
 	void definaEndereco(std::string);
+
+	Carrinho* pegueCarrinho();
+
+	void definaCarrinho(Carrinho* carrinho);
 	
 };

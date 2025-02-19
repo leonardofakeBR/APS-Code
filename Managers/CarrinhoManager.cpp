@@ -4,9 +4,12 @@ using namespace std;
 
 #include <CarrinhoManager.hpp>
 
-Produto* CarrinhoManager::abrirCarrinho(){
+int CarrinhoManager::pegueCpf(){
+    return cliente->pegueCPF_Cliente();
+}
+
+Item_Carrinho* CarrinhoManager::abrirCarrinho(){
+    int CPF_Cliente = CarrinhoManager::pegueCpf();
     CarrinhoDao* dao = daoManager.pegueCarrinhoDao();
-    int CPF_Cliente = dao->pegueCpf();
-    Produto* produtos = dao->listarProdutos(CPF_Cliente);
-    return produtos;
+    return dao->listarItem_Carrinho(CPF_Cliente);
 }
