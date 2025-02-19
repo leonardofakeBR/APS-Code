@@ -1,4 +1,4 @@
-#include "Promocao.h"
+#include "Promocao.hpp"
 
 int Promocao::pegueId_Promocao() {
 	return id_Promocao;
