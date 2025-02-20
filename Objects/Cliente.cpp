@@ -10,42 +10,52 @@ void Cliente::definaId(int novoId) {
 	
 }
 
-std::string pegueCPF() {
+std::string Cliente::pegueCPF() {
 	return CPF;
 	
 }
 
-void definaCPF(std::string cpfCliente) {
+void Cliente::definaCPF(std::string cpfCliente) {
 	CPF = cpfCliente;
 	
 }
 
-std::string pegueNome() {
+std::string Cliente::pegueNome() {
 	return Nome;
 	
 }
 
-void definaNome(std::string nomeCliente) {
+void Cliente::definaNome(std::string nomeCliente) {
 	Nome = nomeCliente;
 	
 }
 
-std::string pegueEmail() {
+std::string Cliente::pegueEmail() {
 	return Email;
 	
 }
 
-void definaEmail(std::string emailCliente) {
+void Cliente::definaEmail(std::string emailCliente) {
 	Email = emailCliente;
 	
 }
 
-std::string pegueEndereco() {
+std::string Cliente::pegueEndereco() {
 	return Endereco;
 	
 }
 
-void definaEndereco(std::string enderecoCliente) {
+void Cliente::definaEndereco(std::string enderecoCliente) {
 	Endereco = enderecoCliente;
+	
+}
+
+Carrinho* Cliente::pegueCarrinho() {
+	return &carrinho;
+	
+}
+
+void Cliente::definaCarrinho(Carrinho* novoCarrinho) {
+	Carrinho = novoCarrinho;
 	
 }

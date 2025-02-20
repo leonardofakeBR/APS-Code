@@ -9,6 +9,7 @@ private:
 	std::string Nome;
 	std::string Email;
 	std::string Endereco;
+	Carrinho* carrinho;
 	
 	
 public:
@@ -24,7 +25,10 @@ public:
 	std::string pegueEmail();
 	void definaEmail(std::string);
 	
-	std::string peguetEndereco();
+	std::string pegueEndereco();
 	void definaEndereco(std::string);
+	
+	Carrinho* pegueCarrinho();
+	void definaCarrinho(Carrinho*);
 	
 };
