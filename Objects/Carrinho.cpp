@@ -25,8 +25,8 @@ Cliente* Carrinho::pegueCliente() {
 	
 }
 
-void Carrinho::definaCliente(Cliente* clientee) {
-	cliente = clientee;
+void Carrinho::definaCliente(Cliente* novo_cliente) {
+	cliente = novo_cliente;
 	
 }
 
