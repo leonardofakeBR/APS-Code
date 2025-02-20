@@ -1,41 +1,51 @@
 #include "Cliente.h"
 
-	std::string pegueCPF() {
-		return CPF;
-		
-	}
+int Cliente::pegueId() {
+	return Id;
 	
-	void definaCPF(std::string cpfCliente) {
-		CPF = cpfCliente;
-		
-	}
+}
+
+void Cliente::definaId(int novoId) {
+	Id = novoId;
 	
-	std::string pegueNome() {
-		return nome;
-		
-	}
+}
+
+std::string pegueCPF() {
+	return CPF;
 	
-	void definaNome(std::string nomeCliente) {
-		nome = nomeCliente;
-		
-	}
+}
+
+void definaCPF(std::string cpfCliente) {
+	CPF = cpfCliente;
 	
-	std::string pegueEmail() {
-		return email;
-		
-	}
+}
+
+std::string pegueNome() {
+	return Nome;
 	
-	void definaEmail(std::string emailCliente) {
-		email = emailCliente;
-		
-	}
+}
+
+void definaNome(std::string nomeCliente) {
+	Nome = nomeCliente;
 	
-	std::string pegueEndereco() {
-		return endereco;
-		
-	}
+}
+
+std::string pegueEmail() {
+	return Email;
 	
-	void definaEndereco(std::string enderecoCliente) {
-		endereco = enderecoCliente;
-		
-	}
+}
+
+void definaEmail(std::string emailCliente) {
+	Email = emailCliente;
+	
+}
+
+std::string pegueEndereco() {
+	return Endereco;
+	
+}
+
+void definaEndereco(std::string enderecoCliente) {
+	Endereco = enderecoCliente;
+	
+}

@@ -4,17 +4,13 @@ using namespace std;
 
 class Estoque {
     private:
-        int capacidade;
-        string endereco;   
+        int Capacidade;
+        string Endereco;   
     public:
-        Estoque(int capacidade, string endereco);
-
         int pegueCapacidade();
-        void definaCapacidade(int capacidade);
+        void definaCapacidade(int);
 
         string pegueEndereco();
-        void definaEndereco(string endereco);
-
-        void imprime();     
+        void definaEndereco(string);     
 
 };

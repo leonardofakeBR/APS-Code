@@ -1,16 +1,21 @@
 #include <string>
+#include "Cliente.hpp"
 
 class Carrinho {
 	
 private:
-	std::string Total_De_Itens;
+	int Total_De_Itens;
 	double Valor_Parcial_Da_Compra;
+	Cliente* cliente;
 	
 public:
-	std::string getTotal_De_Itens();
-	void setTotal_De_Itens(std::string);
+	int pegueTotal_De_Itens();
+	void definaTotal_De_Itens(int);
 	
-	double getValor_Parcial_Da_Compra();
-	void setValor_Parcial_Da_Compra(double);
+	double pegueValor_Parcial_Da_Compra();
+	void definaValor_Parcial_Da_Compra(double);
+	
+	Cliente* pegueValor_Parcial_Da_Compra();
+	void definaValor_Parcial_Da_Compra(Cliente*);
 	
 };

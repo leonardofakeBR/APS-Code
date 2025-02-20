@@ -1,28 +1,30 @@
 #include <string>
+#include "Carrinho.hpp"
 
 class Cliente {
 
 private:
-	int CPF_Cliente;
+	int Id;
+	std::string CPF;
 	std::string Nome;
 	std::string Email;
 	std::string Endereco;
 	
+	
 public:
-	int getCPF_Cliente();
+	int pegueId();
+	void definaId(int);
 	
-	void setCPF_Cliente(int);
+	std::string pegueCPF();
+	void definaCPF(std::string);
 	
-	std::string getNome();
+	std::string pegueNome();
+	void definaNome(std::string);
 	
-	void setNome(std::string);
+	std::string pegueEmail();
+	void definaEmail(std::string);
 	
-	std::string getEmail();
-	
-	void setEmail(std::string);
-	
-	std::string getEndereco();
-	
-	void setEndereco(std::string);
+	std::string peguetEndereco();
+	void definaEndereco(std::string);
 	
 };
