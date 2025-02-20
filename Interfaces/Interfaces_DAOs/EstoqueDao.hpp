@@ -2,13 +2,17 @@
 #include <string>
 using namespace std;
 
+
+#include "Pedido.hpp"
 class DaoManager;
+
 
 class EstoqueDao {
     private:
         DaoManager *dao;
 
     public:
-       virtual bool atualizar(int id_Pedido, string status_do_Pedido);
+       virtual void atualizar(int id_Pedido);
+       virtual void subtairItensSolicitados(Pedido* pedido);
 
 };

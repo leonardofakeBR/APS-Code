@@ -12,10 +12,7 @@ class PedidoManager {
     Pedido* pedido;
 
     public:
-    virtual void AtualizarStatus(int id_pedido);
-    
-    void enviarConfirmacaoDoPedido(int);
-    
-    
+    virtual void AtualizarStatusPagamento(int id_pedido);
+    virtual NotaFiscal* solicitarNotaFiscal(int id_pedido);
 
 };

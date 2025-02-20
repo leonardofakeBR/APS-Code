@@ -1,28 +1,36 @@
 #include <string>
 
+class NotaFiscal;
+
 class Pedido {
 private:
 	int Id_Pedido;
 	double Valor_Total;
-	bool Status_Do_Pagamento;
-	std::string Status_Do_Pedido;
-	
+	bool Status_Pagamento;
+	std::string Status_Pedido;
+	NotaFiscal* notafiscal;
 	
 public:
-	int getId_Pedido();
+	Pedido(int Id_Pedido, double Valor_Total, bool Status_Pagamento, std::string Status_Pedido, NotaFiscal* notafiscal);
+
+	int pegueId_Pedido();
 	
-	void setId_Pedido(int);
+	void definaId_Pedido(int);
 	
-	double getValor_Total();
+	double pegueValor_Total();
 	
-	void setValor_Total(double);
+	void definaValor_Total(double);
 	
-	std::string getStatus_Do_Pedido();
+	std::string pegueStatus_Pedido();
 	
-	void setStatus_Do_Pedido(std::string);
+	void definaStatus_Pedido(std::string);
 	
-	std::string getStatus_Do_Pagamento();
+	bool pegueStatus_Pagamento();
 	
-	void setStatus_Do_Pagamento(std::string);
-	
+	void definaStatus_Pagamento(bool);
+
+	NotaFiscal* pegueNotaFiscal();
+
+	void definaNotaFiscal(NotaFiscal*);
+
 };

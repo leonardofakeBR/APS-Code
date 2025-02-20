@@ -1,32 +1,31 @@
 #include "Carrinho.hpp"
 
-int Carrinho::pegueTotal_De_Itens() {
-	return total_De_Itens;
-	
+Carrinho::Carrinho(int Total_De_Itens, double Valor_Parcial_Da_Compra, Cliente* cliente){
+	this->Total_De_Itens = Total_De_Itens;
+	this->Valor_Parcial_Da_Compra = Valor_Parcial_Da_Compra;
+	this->cliente = cliente;
 }
 
-void Carrinho::definaTotal_De_Itens(int itens) {
-	Total_De_Itens = itens;
-	
+int Carrinho::pegueTotal_De_Itens(){
+	return Total_De_Itens;
 }
 
-double Carrinho::pegueValor_Parcial_Da_Compra() {
+void Carrinho::definaTotal_De_Itens(int Total_De_Itens){
+	this->Total_De_Itens = Total_De_Itens;
+}
+
+double Carrinho::pegueValor_Parcial_Da_Compra(){
 	return Valor_Parcial_Da_Compra;
-	
 }
 
-void Carrinho::definaValor_Parcial_Da_Compra(double valor) {
-	Valor_Parcial_Da_Compra = valor;
-	
+void Carrinho::definaValor_Parcial_Da_Compra(double Valor_Parcial_Da_Compra){
+	this->Valor_Parcial_Da_Compra = Valor_Parcial_Da_Compra;
 }
 
-Cliente* Carrinho::pegueCliente() {
-	return &cliente;
-	
+Cliente* Carrinho::pegueCliente(){
+	return cliente;
 }
 
-void Carrinho::definaCliente(Cliente* novo_cliente) {
-	cliente = novo_cliente;
-	
+void Carrinho::definaCliente(Cliente* cliente){
+	this->cliente = cliente;
 }
-

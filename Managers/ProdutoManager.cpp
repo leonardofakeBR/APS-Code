@@ -6,6 +6,5 @@ using namespace std;
 
 Produto* ProdutoManager::listarProdutos(){
     ProdutoDao* dao = daoManager.pegueProdutoDao();
-    Produto* produto = dao->listar();
-    return produto;
+    return dao->listar();
 }

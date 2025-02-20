@@ -1,3 +1,4 @@
+#include "Produto.hpp"
 #include <string>
 
 class Promocao {

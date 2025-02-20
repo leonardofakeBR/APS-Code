@@ -1,23 +1,22 @@
-#include "Estoque.hpp"
+#include <Estoque.hpp>
 
-int Estoque::pegueCapacidade() {
-	return Capacidade;
-	
+Estoque::Estoque(int capacidade, string Localizacao){
+    this->capacidade = capacidade;
+    this->Localizacao = Localizacao;
 }
 
-void Estoque::definaCapacidade(int cap) {
-	Capacidade = cap;
-	
+int Estoque::pegueCapacidade(){
+    return capacidade;
 }
 
-std::string Estoque::pegueEndereco() {
-	return Endereco
-	
+void Estoque::definaCapacidade(int capacidade){
+    this->capacidade = capacidade;
 }
 
-void Estoque::definaEndereco(string end) {
-	Endereco = end;
-	
+string Estoque::pegueLocalizacao(){
+    return Localizacao;
 }
 
-
+void Estoque::definaLocalizacao(string Localizacao){
+    this->Localizacao = Localizacao;
+}

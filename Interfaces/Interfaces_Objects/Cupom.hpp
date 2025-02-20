@@ -6,12 +6,12 @@ class Cupom {
     private:
         string codigo;
         string descricao;     
-        string desconto;
+        double desconto;
         string data_de_Inicio;
         string data_de_Fim;
-        float valor_Minimo;   
+        double valor_Minimo;   
     public:
-        Cupom(string codigo, string descricao, string desconto, string data_de_Inicio, string data_de_Fim, float valor_Minimo);
+        Cupom(string codigo, string descricao, double desconto, string data_de_Inicio, string data_de_Fim, double valor_Minimo);
 
         string pegueCodigo();
         void definaCodigo(string codigo);
@@ -19,8 +19,8 @@ class Cupom {
         string pegueDescricao();
         void definaDescricao(string descricao);
 
-        string pegueDesconto();
-        void definaDesconto(string desconto);
+        double pegueDesconto();
+        void definaDesconto(double desconto);
 
         string pegueData_de_Inicio();
         void definaData_de_Inicio(string data_de_Inicio);
@@ -28,8 +28,9 @@ class Cupom {
         string pegueData_de_Fim();
         void definaData_de_Fim(string data_de_Fim);
 
-        float pegueValor_Minimo();
-        void definaValor_Minimo(float valor_Minimo);
+        double pegueValor_Minimo();
+        void definaValor_Minimo(double valor_Minimo);
 
         void imprime();
 };
+
