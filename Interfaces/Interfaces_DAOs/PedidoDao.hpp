@@ -11,6 +11,7 @@ class PedidoDao {
         Pedido *pedido;
         Pedido* pedidos[10];
         NotaFiscal* notas[10];
+        Item_Pedido* item_pedido[10];
 
     public:
         // Construtor
@@ -46,7 +47,9 @@ class PedidoDao {
         }
     
         virtual int pegueCPFCliente(int id_pedido);
+        virtual Pedido* peguePedido(int id_pedido);
         virtual NotaFiscal* pegueNotaFiscal(int id_pedido);
         virtual void confirmarPagamento(int id_pedido);
+        virtual void confirmarPedido(int id_pedido);
         virtual string exibirResultado();
 };

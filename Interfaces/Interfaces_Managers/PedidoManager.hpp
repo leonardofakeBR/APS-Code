@@ -9,7 +9,7 @@ class PedidoManager {
     DaoManager daoManager;
 
     public:
-    virtual void AtualizarStatus(int id_pedido);
+    virtual void AtualizarStatusPagamento(int id_pedido);
     virtual NotaFiscal* solicitarNotaFiscal(int id_pedido);
 
 };

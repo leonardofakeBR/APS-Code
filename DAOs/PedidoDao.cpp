@@ -17,3 +17,23 @@ NotaFiscal* PedidoDao::pegueNotaFiscal(int id_pedido){
 
     return nullptr;
 }
+
+void PedidoDao::confirmarPedido(int id_pedido){
+    for (int i = 0; i < 10; i++)
+    {
+        if (pedidos[i]->pegueId_Pedido() == id_pedido)
+        {
+            pedidos[i]->definaStatus_Pagamento(true);
+        }
+    }
+}
+
+Pedido* PedidoDao::peguePedido(int id_pedido){
+    for (int i = 0; i < 10; i++)
+    {
+        if (pedidos[i]->pegueId_Pedido() == id_pedido)
+        {
+            return pedidos[i];
+        }
+    }
+}

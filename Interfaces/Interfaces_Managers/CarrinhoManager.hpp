@@ -19,5 +19,5 @@ class CarrinhoManager {
     }
 
     virtual Item_Carrinho* abrirCarrinho();
-    virtual int pegueCpf();
+    virtual string pegueCpf();
 };

@@ -6,12 +6,12 @@ class Pedido {
 private:
 	int Id_Pedido;
 	double Valor_Total;
-	bool Status_Do_Pagamento;
-	std::string Status_Do_Pedido;
+	bool Status_Pagamento;
+	std::string Status_Pedido;
 	NotaFiscal* notafiscal;
 	
 public:
-	Pedido(int Id_Pedido, double Valor_Total, bool Status_Do_Pagamento, std::string Status_Do_Pedido, NotaFiscal* notafiscal);
+	Pedido(int Id_Pedido, double Valor_Total, bool Status_Pagamento, std::string Status_Pedido, NotaFiscal* notafiscal);
 
 	int pegueId_Pedido();
 	
@@ -21,13 +21,13 @@ public:
 	
 	void definaValor_Total(double);
 	
-	std::string pegueStatus_Do_Pedido();
+	std::string pegueStatus_Pedido();
 	
-	void definaStatus_Do_Pedido(std::string);
+	void definaStatus_Pedido(std::string);
 	
-	bool pegueStatus_Do_Pagamento();
+	bool pegueStatus_Pagamento();
 	
-	void definaStatus_Do_Pagamento(bool);
+	void definaStatus_Pagamento(bool);
 
 	NotaFiscal* pegueNotaFiscal();
 
