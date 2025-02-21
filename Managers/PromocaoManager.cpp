@@ -5,3 +5,9 @@ Promocao* PromocaoManager::criar() {
 	return pont;
 	
 }
+
+void PromocaoManager::lancarPromoao(Produto* prod, std::string dataInicio, std::stringdataFim, double precoDesconto) {
+	PromocaoDao* dao = daoManager.peguePromocaoDao();
+	dao
+	
+}
