@@ -1,19 +1,19 @@
 #include "Cliente.hpp"
 
-Cliente::Cliente(int CPF_Cliente, std::string Nome, std::string Email, std::string Endereco, Carrinho* carrinho){
-	this->CPF_Cliente = CPF_Cliente;
+Cliente::Cliente(std::string CPF_Cliente, std::string Nome, std::string Email, std::string Endereco, Carrinho* carrinho){
+	this->CPF = CPF_Cliente;
 	this->Nome = Nome;
 	this->Email = Email;
 	this->Endereco = Endereco;
 	this->carrinho = carrinho;
 }
 
-int Cliente::pegueCPF_Cliente(){
-	return CPF_Cliente;
+string Cliente::pegueCPF_Cliente(){
+	return CPF;
 }
 
-void Cliente::definaCPF_Cliente(int CPF_Cliente){
-	this->CPF_Cliente = CPF_Cliente;
+void Cliente::definaCPF_Cliente(string CPF_Cliente){
+	this->CPF = CPF_Cliente;
 }
 
 std::string Cliente::pegueNome(){

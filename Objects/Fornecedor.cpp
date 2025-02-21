@@ -1,9 +1,9 @@
 #include <Fornecedor.hpp>
 
-void Fornecedor::definaCNPJ(int CNPJ){
+void Fornecedor::definaCNPJ(string CNPJ){
     this->CNPJ = CNPJ;
 }
-int Fornecedor::pegueCNPJ(){
+string Fornecedor::pegueCNPJ(){
     return this->CNPJ;
 }
 

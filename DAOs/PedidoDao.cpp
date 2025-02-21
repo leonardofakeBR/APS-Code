@@ -57,3 +57,7 @@ Item_Pedido* PedidoDao::pegueItem_Pedido(int id_pedido){
 
     return itens;
 }
+
+void PedidoDao::exibirConfirmacao(){
+    cout << "Seu pedido foi confirmado com sucesso!" << endl;
+}

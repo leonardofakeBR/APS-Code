@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Item_Carrinho* CarrinhoDao::listarItem_Carrinho(int CPF_Cliente) {
+Item_Carrinho* CarrinhoDao::listarItem_Carrinho(string CPF_Cliente) {
     int count = 0;
     
     for (int i = 0; i < 10; i++) {

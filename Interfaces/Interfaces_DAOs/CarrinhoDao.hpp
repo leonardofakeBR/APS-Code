@@ -77,5 +77,5 @@ class CarrinhoDao {
 
         };
 
-       virtual Item_Carrinho* listarItem_Carrinho(int CPF_Cliente);
+       virtual Item_Carrinho* listarItem_Carrinho(string CPF_Cliente);
 };

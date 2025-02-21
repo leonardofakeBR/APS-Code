@@ -19,7 +19,7 @@ public:
 	void definaNome(std::string);
 	
 	double peguePreco_Desconto();
-	void definaDesconto(double);
+	void definaPreco_Desconto(double);
 	
 	std::string pegueData_Inicio();
 	void definaData_Inicio(std::string);

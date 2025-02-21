@@ -4,12 +4,12 @@ using namespace std;
 
 #include <CarrinhoManager.hpp>
 
-int CarrinhoManager::pegueCpf(){
-    return cliente->pegueCPF_Cliente();
+string CarrinhoManager::pegueCpf(){
+    return std::to_string(cliente->pegueCPF_Cliente());
 }
 
 Item_Carrinho* CarrinhoManager::abrirCarrinho(){
-    int CPF_Cliente = CarrinhoManager::pegueCpf();
+    string CPF_Cliente = CarrinhoManager::pegueCpf();
     CarrinhoDao* dao = daoManager.pegueCarrinhoDao();
     return dao->listarItem_Carrinho(CPF_Cliente);
 }

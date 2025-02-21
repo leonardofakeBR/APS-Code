@@ -1,6 +1,6 @@
 #include "Item_Estoque.hpp"
 
-Item::Item(int Id, Estoque* estoque, Produto* produto, Fornecedor* fornecedor) {
+Item_Estoque::Item_Estoque(int Id, Estoque* estoque, Produto* produto, Fornecedor* fornecedor) {
 	this->Id = Id;
 	this->estoque = estoque;
 	this->produto = produto;
@@ -8,41 +8,41 @@ Item::Item(int Id, Estoque* estoque, Produto* produto, Fornecedor* fornecedor) {
 	
 }
 
-int Item::pegueId() {
+int Item_Estoque::pegueId() {
 	return Id;
 	
 }
 
-void Item::definaId(int novoId) {
+void Item_Estoque::definaId(int novoId) {
 	this->Id = novoId;
 	
 }
 
-Estoque* Item::pegueEstoque() {
+Estoque* Item_Estoque::pegueEstoque() {
 	return estoque;
 }
 
-void Item::definaEstoque(Estoque* novoEstoque) {
+void Item_Estoque::definaEstoque(Estoque* novoEstoque) {
 	this->estoque = novoEstoque;
 	
 }
 
-Produto* Item::pegueProduto() {
+Produto* Item_Estoque::pegueProduto() {
 	return produto;
 	
 }
 
-void Item::definaProduto(Produto* novoProd) {
+void Item_Estoque::definaProduto(Produto* novoProd) {
 	this->produto = novoProd;
 	
 }
 
-Fornecedor* Item::pegueFornecedor() {
+Fornecedor* Item_Estoque::pegueFornecedor() {
 	return fornecedor;
 	
 }
 
-void Item::definaFornecedor(Fornecedor* novoFornecedor) {
+void Item_Estoque::definaFornecedor(Fornecedor* novoFornecedor) {
 	this->fornecedor = novoFornecedor;
 	
 }

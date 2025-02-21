@@ -108,4 +108,5 @@ class PedidoDao {
         virtual void confirmarPagamento(int id_pedido);
         virtual void confirmarPedido(int id_pedido);
         virtual string exibirResultado();
+        virtual void exibirConfirmacao();
 };

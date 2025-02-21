@@ -1,5 +1,6 @@
 #include <string>
 #include "Carrinho.hpp"
+using namespace std;
 
 class Carrinho;
 
@@ -14,11 +15,11 @@ private:
 	Carrinho* carrinho;
 	
 public:
-	Cliente(int CPF_Cliente, std::string Nome, std::string Email, std::string Endereco, Carrinho* carrinho);
+	Cliente(string CPF_Cliente, std::string Nome, std::string Email, std::string Endereco, Carrinho* carrinho);
 
-	int pegueCPF_Cliente();
+	string pegueCPF_Cliente();
 	
-	void definaCPF_Cliente(int);
+	void definaCPF_Cliente(string);
 	
 	std::string pegueNome();
 	

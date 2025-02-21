@@ -1,11 +1,11 @@
 #include "PromocaoDao.hpp"
 
 Promocao* PromocaoDao::peguePromocao() {
-	return &promocao;
+	return promocao;
 	
 }
 
 void PromocaoDao::definaPromocao(Promocao* promo) {
-	promocao = promo;
+	this->promocao = promo;
 	
 }
