@@ -4,7 +4,7 @@ using namespace std;
 
 class Fornecedor {
     private:
-        int CNPJ;
+        string CNPJ;
         string nome;
         string telefone;
         string email;
@@ -13,10 +13,10 @@ class Fornecedor {
         string condicoes_de_Entrega;
         
     public:
-        Fornecedor(int CNPJ, string nome, string telefone, string email, string endereco, string contado_Principal, string condicoes_de_Entrega);
+        Fornecedor(string CNPJ, string nome, string telefone, string email, string endereco, string contado_Principal, string condicoes_de_Entrega);
 
-        int pegueCNPJ();
-        void definaCNPJ(int CNPJ);
+        string pegueCNPJ();
+        void definaCNPJ(string CNPJ);
 
         string pegueNome();
         void definaNome(string nome);

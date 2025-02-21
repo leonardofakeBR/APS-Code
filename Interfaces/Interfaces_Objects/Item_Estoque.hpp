@@ -2,7 +2,7 @@
 #include "Produto.hpp"
 #include "Fornecedor.hpp"
 
-class Item {
+class Item_Estoque {
 private:
 	int Id;
 	Estoque* estoque;
@@ -10,16 +10,18 @@ private:
 	Fornecedor* fornecedor;
 	
 public:
+	Item_Estoque(int Id, Estoque* estoque, Produto* produto, Fornecedor* fornecedor);
+
 	int pegueId();
 	void definaId(int);
 	
-	int pegueEstoque();
+	Estoque* pegueEstoque();
 	void definaEstoque(Estoque*);
 	
-	int pegueProduto();
+	Produto* pegueProduto();
 	void definaProduto(Produto*);
 	
-	int pegueFornecedor();
+	Fornecedor* pegueFornecedor();
 	void definaFornecedor(Fornecedor*);
 	
 };

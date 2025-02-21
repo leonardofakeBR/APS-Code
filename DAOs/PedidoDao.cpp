@@ -28,12 +28,32 @@ void PedidoDao::confirmarPedido(int id_pedido){
     }
 }
 
-Pedido* PedidoDao::peguePedido(int id_pedido){
+Item_Pedido* PedidoDao::pegueItem_Pedido(int id_pedido){
+    int count = 0;
     for (int i = 0; i < 10; i++)
     {
-        if (pedidos[i]->pegueId_Pedido() == id_pedido)
+        if (itensPedido[i]->peguePedido()->pegueId_Pedido() == id_pedido)
         {
-            return pedidos[i];
+            count++;
         }
     }
+
+    if (count == 0)
+    {
+        return nullptr;
+    }
+
+    Item_Pedido* itens = new Item_Pedido[count];
+    int index = 0;
+
+    for (int i = 0; i < 10; i++)
+    {
+        if (itensPedido[i]->peguePedido()->pegueId_Pedido() == id_pedido)
+        {
+            itens[index] = *itensPedido[i];
+            index++;
+        }
+    }
+
+    return itens;
 }
